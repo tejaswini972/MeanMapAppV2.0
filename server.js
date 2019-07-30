@@ -32,3 +32,9 @@ require('./app/routes.js')(app);
 // -------------------------------------------------------
 app.listen(port);
 console.log('App listening on port ' + port);
+...
+// Express Configuration
+// -----------------------------------------------------
+// Sets the connection to MongoDB
+mongoose.connect(database.bitnami.url);
+...
